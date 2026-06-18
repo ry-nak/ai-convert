@@ -6,7 +6,7 @@ import {
   FileText, CheckCircle2, Waves, Mic2
 } from "lucide-react";
 
-const API_BASE = import.meta.env.VITE_API_URL;
+const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-backend-production-522d.up.railway.app';
 
 export default function App() {
   const [file, setFile] = useState<File | null>(null);
@@ -118,7 +118,7 @@ export default function App() {
             SRT Voice <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blue-500 to-indigo-400">Studio</span>
           </h1>
           <p className="text-slate-400 text-sm md:text-base max-w-lg mx-auto px-4">
-            Transform your subtitles into professional Khmer audio with perfect timing. test
+            Transform your subtitles into professional Khmer audio with perfect timing.
           </p>
         </header>
 
