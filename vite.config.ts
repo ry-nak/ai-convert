@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://aisrtbackend.netlify.app',
+        target: 'https://ai-backend-production-522d.up.railway.app',
         changeOrigin: true,
         secure: false,
       }
