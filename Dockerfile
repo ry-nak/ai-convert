@@ -6,6 +6,13 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+# --- THESE ARE THE MISSING PIECES ---
+# Tell Docker to expect these variables from Railway during the build
+ARG VITE_API_URL
+# Make them available to the Vite build process
+ENV VITE_API_URL=$VITE_API_URL
+
+
 # Step 2: Production Stage
 FROM nginx:alpine
 

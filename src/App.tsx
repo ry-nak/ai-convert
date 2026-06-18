@@ -6,7 +6,7 @@ import {
   FileText, CheckCircle2, Waves, Mic2
 } from "lucide-react";
 
-const API_BASE = import.meta.env.VITE_API_URL + "/api";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export default function App() {
   const [file, setFile] = useState<File | null>(null);
