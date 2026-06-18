@@ -6,7 +6,7 @@ import {
   FileText, CheckCircle2, Waves, Mic2
 } from "lucide-react";
 
-const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-backend-production-522d.up.railway.app';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-backend-production-522d.up.railway.app/api';
 
 export default function App() {
   const [file, setFile] = useState<File | null>(null);
